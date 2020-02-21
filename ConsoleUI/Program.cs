@@ -11,14 +11,23 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            DynamicArray newDynamicArray = new DynamicArray(2);
+            DynamicArray newDynamicArray = new DynamicArray(0);
             newDynamicArray.add(1);
             newDynamicArray.add(2);
             newDynamicArray.add(3);
-            //newDynamicArray.add(4);
-            //newDynamicArray.add(5);
-            //newDynamicArray.add(6);
-            Console.WriteLine(newDynamicArray.size());
+            newDynamicArray.add(4);
+            newDynamicArray.add(5);
+            newDynamicArray.add(6);
+            newDynamicArray.add(7);
+            newDynamicArray.add(8);
+
+            newDynamicArray.removeAt(1);
+            foreach (int item in newDynamicArray)
+            {
+                Console.WriteLine(item);
+            }
+            
+
             
         }
     }
