@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{13012700-8E21-4CA7-832A-D332D3D4B660}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicArrayImplementation", "DynamicArrayImplementation\DynamicArrayImplementation.csproj", "{CDA531EC-6C99-42D1-992B-DA73856E51D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicArray", "DataStructures\DynamicArray\DynamicArray.csproj", "{CDA531EC-6C99-42D1-992B-DA73856E51D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

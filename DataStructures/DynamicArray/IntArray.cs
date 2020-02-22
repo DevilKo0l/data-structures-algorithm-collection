@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections;
 
-namespace DynamicArrayImplementation
+namespace DynamicArray
 {
-    public class DynamicArray : IEnumerable
+    public class IntArray : IEnumerable
     {
         private int[] arr;
         private int len = 0;// length of element in the array
         private int capacity;// exact length array size (double than the len)
 
-        public DynamicArray(int capacity)
+        public IntArray(int capacity)
         {
             if (capacity < 0) { throw new ArgumentException("Illegal Capacity: " + capacity); }
             this.capacity = capacity;
