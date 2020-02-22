@@ -9,6 +9,7 @@ namespace DynamicArray
         private int len = 0;// length of element in the array
         private int capacity;// exact length array size (double than the len)
 
+        //Constructor initialize value
         public IntArray(int capacity)
         {
             if (capacity < 0) { throw new ArgumentException("Illegal Capacity: " + capacity); }
@@ -16,7 +17,7 @@ namespace DynamicArray
             arr = new int[capacity];
         }
 
-        public int size()
+        public int length()
         {
             return len;
         }
@@ -29,7 +30,7 @@ namespace DynamicArray
 
         public void set(int number, int index)
         {
-            if (index > capacity) { throw new IndexOutOfRangeException($"Index should be less than capacity: {capacity}"); }
+            if (index > capacity) { throw new IndexOutOfRangeException($"Index should be less than capacity({capacity})"); }
             arr[index] = number;
         }
 
@@ -38,11 +39,36 @@ namespace DynamicArray
             return arr[index];
         }
 
+        public void shrinkSize()
+        {
+            int[] temp = null;
+            if (capacity > 0)
+            {
+                temp = new int[len];
+                for (int i = 0; i < len; i++)
+                {
+                    temp[i] = arr[i];
+                }
+                capacity = len;
+                arr = temp;
+            }
+        }
+
+        //Add element at the end of an array
         public void add(int number)
         {
-            int[] temp = new int[len];
+            doubleLength();
+            arr[len] = number;
+            len++;
+        }
+
+        //grow size of an array
+        private void doubleLength()
+        {
+            int[] temp = null;
             if (len == capacity)
             {
+                temp = new int[len];
                 if (capacity == 0) { capacity = 1; } else { capacity *= 2; };
                 temp = arr;
                 arr = new int[capacity];
@@ -51,10 +77,37 @@ namespace DynamicArray
                     arr[i] = temp[i];
                 }
             }
-            arr[len] = number;
-            len++;
         }
 
+        public void addAt(int index, int number)
+        {
+            if (len == capacity)
+            {
+                doubleLength();
+            }
+            if (capacity > 0)
+            {
+                for (int i = len - 1; i >= index; i--)
+                {
+                    arr[i + 1] = arr[i];
+                }
+                arr[index] = number;
+                len++;
+            }
+        }
+
+        //funtion remove the last number
+        public void remove()
+        {
+            if (capacity > 0)
+            {
+                arr[len - 1] = 0;
+                capacity--;
+            }
+        }
+
+        //funtion remove number at specific index
+        //shift all element in the right of given index to the left
         public void removeAt(int index)
         {
             if (len > 0)
