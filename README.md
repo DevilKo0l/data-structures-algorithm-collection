@@ -8,5 +8,5 @@ Everybody is welcome to contribute for this project, if you would like to add or
   ## Data Structure
  * 🐱[Dynamic Array](https://github.com/DevilKo0l/PetProject-DataStructures-Algorithm/tree/master/DataStructures/DynamicArrayImplementation)
       * [Dynamic array (integer only)](https://github.com/DevilKo0l/PetProject-DataStructures-Algorithm/blob/master/DataStructures/DynamicArrayImplementation/DynamicArray.cs)
-      * Dynamic array (generic)
+      * [Dynamic array (generic)](https://github.com/DevilKo0l/PetProject-DataStructures-Algorithm/blob/master/DataStructures/DynamicArray/GenericArray.cs)
   
