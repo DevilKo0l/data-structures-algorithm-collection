@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DynamicArray
 {
@@ -21,29 +17,29 @@ namespace DynamicArray
             arr = new T[capacity];
         }
 
-        public int length()
+        public int Length()
         {
             return len;
         }
 
-        public bool isEmpty()
+        public bool IsEmpty()
         {
             bool isEmpty = (len == 0) ? true : false;
             return isEmpty;
         }
 
-        public void set(T data, int index)
+        public void Set(T data, int index)
         {
-            if (index > capacity||index<0) { throw new IndexOutOfRangeException($"Index shouldn't be less than zero be less than capacity({capacity})"); }
+            if (index > capacity || index < 0) { throw new IndexOutOfRangeException($"Index shouldn't be less than zero be less than capacity({capacity})"); }
             arr[index] = data;
         }
 
-        public T get(int index)
+        public T Get(int index)
         {
             return arr[index];
         }
 
-        public void shrinkSize()
+        public void ShrinkSize()
         {
             T[] temp = null;
             if (capacity > 0)
@@ -59,15 +55,15 @@ namespace DynamicArray
         }
 
         //Add element at the end of an array
-        public void add(T data)
+        public void Add(T data)
         {
-            doubleLength();
+            DoubleLength();
             arr[len] = data;
             len++;
         }
 
         //grow size of an array
-        private void doubleLength()
+        private void DoubleLength()
         {
             T[] temp = null;
             if (len == capacity)
@@ -83,11 +79,11 @@ namespace DynamicArray
             }
         }
 
-        public void addAt(int index, T data)
+        public void AddAt(int index, T data)
         {
             if (len == capacity)
             {
-                doubleLength();
+                DoubleLength();
             }
             if (capacity > 0)
             {
@@ -101,7 +97,7 @@ namespace DynamicArray
         }
 
         //funtion remove the last number
-        public void remove()
+        public void Remove()
         {
             if (capacity > 0)
             {
@@ -112,7 +108,7 @@ namespace DynamicArray
 
         //funtion remove number at specific index
         //shift all element in the right of given index to the left
-        public void removeAt(int index)
+        public void RemoveAt(int index)
         {
             if (len > 0)
             {
