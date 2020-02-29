@@ -63,6 +63,20 @@
             current.next = newNode;
         }
 
+        //Remove value base on node input
+        public void RemoveAt(Node<T> node)
+        {
+        }
+
+        //Remove balue base on data input
+        public void RemoveWithData(T Data)
+        {
+        }
+
+        //RemoveFirst
+
+        //RemoveLast
+
         //Clear
 
         //Contains
@@ -70,9 +84,5 @@
         //Find
 
         //FindLast
-
-        //Remove
-
-        //RemoveFirst
     }
 }
