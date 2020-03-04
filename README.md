@@ -12,4 +12,6 @@ Everybody is welcome to contribute for this project, if you would like to add or
  * 🐱Linked List
       * [Singly Linked List](https://github.com/DevilKo0l/PetProject-DataStructures-Algorithm/blob/master/DataStructures/LinkedList/SinglyLinkedList/SinglyLinkedList.cs)
       * Doubly Linked List
+ * 🐱Stack
+ * 🐱Queue
   
