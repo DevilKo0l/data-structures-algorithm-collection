@@ -66,6 +66,12 @@
         //Remove value base on node input
         public void RemoveAt(Node<T> node)
         {
+            Node<T> current = head;
+            if (current.next != node)
+            {
+                current = current.next;
+            }
+            current = current.next.next;
         }
 
         //Remove balue base on data input
@@ -74,8 +80,23 @@
         }
 
         //RemoveFirst
+        public void RemoveFirst()
+        {
+            Node<T> current = head;
+            head = current.next;
+            current = null;
+        }
 
         //RemoveLast
+        public void RemoveLast()
+        {
+            Node<T> current = head;
+            if (current.next != null)
+            {
+                current = current.next;
+            }
+            current.next = null;
+        }
 
         //Clear
 
