@@ -7,6 +7,9 @@ Everybody is welcome to contribute for this project, if you would like to add or
 # Overview
   ## Data Structure
  * 🐱[Dynamic Array](https://github.com/DevilKo0l/PetProject-DataStructures-Algorithm/tree/master/DataStructures/DynamicArrayImplementation)
-      * [Dynamic array (integer only)](https://github.com/DevilKo0l/PetProject-DataStructures-Algorithm/blob/master/DataStructures/DynamicArrayImplementation/DynamicArray.cs)
+      * [Dynamic array (integer only)](https://github.com/DevilKo0l/PetProject-DataStructures-Algorithm/blob/master/DataStructures/DynamicArray/DynamicArray.csproj)
       * [Dynamic array (generic)](https://github.com/DevilKo0l/PetProject-DataStructures-Algorithm/blob/master/DataStructures/DynamicArray/GenericArray.cs)
+ * 🐱Linked List
+      * [Singly Linked List](https://github.com/DevilKo0l/PetProject-DataStructures-Algorithm/blob/master/DataStructures/LinkedList/SinglyLinkedList/SinglyLinkedList.cs)
+      * Doubly Linked List
   
