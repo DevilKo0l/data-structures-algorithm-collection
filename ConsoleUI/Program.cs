@@ -1,9 +1,13 @@
-﻿namespace ConsoleUI
+﻿using DoublyLinkedList;
+using System;
+
+namespace ConsoleUI
 {
-    internal class Program
+    public class Program
     {
         private static void Main(string[] args)
         {
+           
         }
     }
 }

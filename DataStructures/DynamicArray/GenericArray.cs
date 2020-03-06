@@ -24,8 +24,7 @@ namespace DynamicArray
 
         public bool IsEmpty()
         {
-            bool isEmpty = (len == 0) ? true : false;
-            return isEmpty;
+            return len == 0;
         }
 
         public void Set(T data, int index)
