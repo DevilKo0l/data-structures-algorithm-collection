@@ -104,6 +104,7 @@ namespace DynamicArray
             {
                 arr[len - 1] = 0;
                 capacity--;
+                len--;
             }
         }
 
