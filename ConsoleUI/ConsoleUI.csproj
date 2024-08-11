@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataStructures\LinkedList\DoublyLinkedList\DoublyLinkedList.csproj">
+    <ProjectReference Include="..\DataStructures\LinkedList\DoublyLinkedList\DataStructures.LinkedList.DoublyLinkedList.csproj">
       <Project>{aa3edc56-6b55-4e6f-a859-c7b088ca83d8}</Project>
-      <Name>DoublyLinkedList</Name>
+      <Name>DataStructures.LinkedList.DoublyLinkedList</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

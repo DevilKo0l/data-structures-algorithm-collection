@@ -5,13 +5,15 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{13012700-8E21-4CA7-832A-D332D3D4B660}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicArray", "DataStructures\DynamicArray\DynamicArray.csproj", "{CDA531EC-6C99-42D1-992B-DA73856E51D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Array.DynamicArray", "DataStructures\DynamicArray\DataStructures.Array.DynamicArray.csproj", "{CDA531EC-6C99-42D1-992B-DA73856E51D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinglyLinkedList", "DataStructures\LinkedList\SinglyLinkedList\SinglyLinkedList.csproj", "{100C4257-D0F9-4236-8CC5-5CE2EADDA3D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.LinkedList.SinglyLinkedList", "DataStructures\LinkedList\SinglyLinkedList\DataStructures.LinkedList.SinglyLinkedList.csproj", "{100C4257-D0F9-4236-8CC5-5CE2EADDA3D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoublyLinkedList", "DataStructures\LinkedList\DoublyLinkedList\DoublyLinkedList.csproj", "{AA3EDC56-6B55-4E6F-A859-C7B088CA83D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.LinkedList.DoublyLinkedList", "DataStructures\LinkedList\DoublyLinkedList\DataStructures.LinkedList.DoublyLinkedList.csproj", "{AA3EDC56-6B55-4E6F-A859-C7B088CA83D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicArray.Tests", "DataStructures.Tests\DynamicArray.Tests\DynamicArray.Tests.csproj", "{21248014-73B9-49A6-BCB8-3BEB767549EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures.Array.DynamicArray.Tests", "DataStructures.Tests\DynamicArray.Tests\DataStructures.Array.DynamicArray.Tests.csproj", "{21248014-73B9-49A6-BCB8-3BEB767549EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Trees.BinaryTree", "DataStructures\Trees\Trees.BinaryTree\DataStructures.Trees.BinaryTree.csproj", "{49F0147A-8FF3-4501-BC6B-A1DA3427F6E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{21248014-73B9-49A6-BCB8-3BEB767549EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21248014-73B9-49A6-BCB8-3BEB767549EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21248014-73B9-49A6-BCB8-3BEB767549EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49F0147A-8FF3-4501-BC6B-A1DA3427F6E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F0147A-8FF3-4501-BC6B-A1DA3427F6E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F0147A-8FF3-4501-BC6B-A1DA3427F6E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F0147A-8FF3-4501-BC6B-A1DA3427F6E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
